@@ -1,0 +1,41 @@
+.budget-items-section{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.budget-items-container{
+    display: flex;
+    width: 60%;
+
+}
+.income-column, .expenses-column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+h1{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.income-column{
+    margin-right: 45px;
+}
+.green{
+    color: rgb(105, 199, 135);
+}
+.red{
+    color: rgb(224, 70, 70);
+}
+.budget-items{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+app-budget-item-card{
+    display: block;
+    margin-bottom: 10px;
+}

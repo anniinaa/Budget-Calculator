@@ -1,0 +1,21 @@
+.input{
+    width: 100px;
+}
+.description{
+    width: 350px;
+}
+.field{
+    padding-left: 20px;
+}
+button{
+    background-color: salmon;
+    border: salmon;
+    color: white;
+}
+button:hover{
+    color: white;
+}
+form{
+    display: flex;
+    justify-content: center;
+}

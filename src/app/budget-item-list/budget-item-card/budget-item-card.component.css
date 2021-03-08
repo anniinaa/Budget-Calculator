@@ -1,0 +1,71 @@
+.root{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.budget-item{
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(165, 202, 214, 0.401);
+    border-radius: 5px;
+    justify-content: space-between;
+
+}
+.description {
+    font-size: 15px;
+    margin: 5px;
+}
+.amount{
+    font-size: 15px;
+    margin: 5px;
+
+}
+.expenses{
+    color: rgb(198, 30, 30);
+
+}
+.expenses p {
+    padding: 5px;
+    border-radius: 5px;
+
+
+}
+.expenses .amount p{
+    background-color: rgba(223, 153, 174, 0.626);
+
+}
+.income p{
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.income{
+    color: rgb(94, 138, 28);
+}
+.income .amount p{
+    background-color: rgba(105, 214, 105, 0.327);
+
+}
+.x-icon-button{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgb(148, 5, 81);
+    background-image: url(../../../assets/delete_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    right: -10px;
+    top: -10px;
+    opacity: 0.2;
+    transition: opacity 0.1s ease-in;
+    cursor: pointer;
+}
+.root, .x-icon-button:hover{
+        opacity: 1;
+}
+
+p{
+    margin: 0;
+}

@@ -1,0 +1,13 @@
+<form #itemForm = "ngForm" (ngSubmit)="onSubmit(itemForm)">
+    <div class="form-row">
+      <div class="field">
+        <input type="number" required name="amount" class="form-control input" placeholder="Amount"[ngModel]="item.amount">
+      </div>
+      <div class="field">
+        <input type="text" required name="description" class="form-control description" placeholder="Description" [ngModel]="item.description">
+      </div>
+      <div class="field">
+          <button type="submit" class="btn" [ngClass]="{'is-primary': isNewItem, 'is-success' : !isNewItem}" [disabled]="itemForm.invalid">Add</button>
+      </div>
+    </div>
+  </form>
