@@ -9,7 +9,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class BudgetItemCardComponent implements OnInit {
 
   @Input() item: BudgetItem;
-  @Output() xButtonClick: EventEmitter<any> = new EventEmitter<any>();
+  @Output() xButtonClick: EventEmitter<BudgetItem> = new EventEmitter<BudgetItem>();
 
   constructor() { }
 
@@ -17,6 +17,7 @@ export class BudgetItemCardComponent implements OnInit {
   }
 
   onXButtonClick(){
-    this.xButtonClick.emit();
+    console.log("1")
+    this.xButtonClick.emit(this.item);
   }
 }
