@@ -15,7 +15,6 @@ export class BudgetItemListComponent implements OnInit {
   ngOnInit(): void {}
 
   onDeleteButton(item: BudgetItem) {
-    console.log("2")
     this.deleteItem.emit(item)
   }
 }

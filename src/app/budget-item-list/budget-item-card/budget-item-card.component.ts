@@ -17,7 +17,6 @@ export class BudgetItemCardComponent implements OnInit {
   }
 
   onXButtonClick(){
-    console.log("1")
     this.xButtonClick.emit(this.item);
   }
 }

@@ -21,7 +21,6 @@ export class MainPageComponent implements OnInit {
     this.totalAmount += newItem.amount;
   }
   deleteItem(item: BudgetItem){
-    console.log("3")
     let index = this.budgetItems.indexOf(item);
     this.budgetItems.splice(index, 1);
     this.totalAmount -= item.amount;
